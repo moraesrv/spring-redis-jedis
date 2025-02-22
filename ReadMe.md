@@ -1,6 +1,10 @@
 # SPRING INTEGRADO COM REDIS VIA JEDIS
 Essa aplicação consiste em utilizar o serviço de cache do Redis para armazenar dados em memória utilizando Jedis.
 
+Caso você deseje trabalhar com o Redis utilizando o Spring Cache ou a interface Crud Repository, veja os projetos abaixo:
+- [Redis via Spring Cache](https://github.com/moraesrv/spring-redis-annotations)
+- [Redis via CrudRepository](https://github.com/moraesrv/spring-redis-crud-repository)
+
 ## PRÉ-REQUISITOS
 Aplicações que devem estar instaladas em sua máquina:
 - [JDK](https://www.oracle.com/br/java/technologies/downloads/)
@@ -9,9 +13,6 @@ Aplicações que devem estar instaladas em sua máquina:
 
 ## SPRING
 Para usar o serviço do Redis no Spring você deve utilizar:
-
-**Anotações**
-- **@EnableCaching**: habilita o serviço de cache na aplicação.
 
 **Dependências**
 - **spring-boot-starter-cache**: habilita o suporte ao cache na sua aplicação Spring.
@@ -24,7 +25,7 @@ Para usar o serviço do Redis no Spring você deve utilizar:
 O Jedis permite que sua aplicação Java se conecte ao servidor Redis, armazene e recupere dados, e execute uma variedade de operações no Redis.
 
 ### CONFIGURAÇÃO
-Além de adicionar a dependência ao projeto, para utilizar o Jedis é necessário criar uma classe de configuração dessa biblioteca, informando os dados de conexão com o Redis.
+Além de adicionar a dependência ao projeto, para utilizar o Jedis é necessário criar uma classe de configuração, informando os dados de conexão com o Redis.
 
 ### MÉTODOS
 Abaixo serão listados os métodos do Jedis que foram utilizados nesse projeto:

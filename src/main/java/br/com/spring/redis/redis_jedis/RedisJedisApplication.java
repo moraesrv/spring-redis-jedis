@@ -6,13 +6,11 @@ import java.util.Set;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 
 import br.com.spring.redis.redis_jedis.collection.Produto;
 import br.com.spring.redis.redis_jedis.service.ProdutoService;
 
-@EnableCaching
 @SpringBootApplication
 public class RedisJedisApplication {
 
