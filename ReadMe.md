@@ -1,8 +1,8 @@
 # SPRING INTEGRADO COM REDIS VIA JEDIS
-Essa aplicação consiste em utilizar o serviço de cache do Redis para armazenar dados em memória utilizando Jedis.
+Essa aplicação consiste em utilizar o Jedis manipulação de dados no Redis utilizando o framework Spring.
 
-Caso você deseje trabalhar com o Redis utilizando o Spring Cache ou a interface Crud Repository, veja os projetos abaixo:
-- [Redis via Spring Cache](https://github.com/moraesrv/spring-redis-annotations)
+Caso você deseje trabalhar com o Redis utilizando o cache do Spring ou a interface CrudRepository, veja os projetos abaixo:
+- [Redis via cache do Spring](https://github.com/moraesrv/spring-redis-annotations)
 - [Redis via CrudRepository](https://github.com/moraesrv/spring-redis-crud-repository)
 
 ## PRÉ-REQUISITOS
@@ -12,20 +12,23 @@ Aplicações que devem estar instaladas em sua máquina:
 - IDE com suporte a Java de sua preferência
 
 ## SPRING
-Para usar o serviço do Redis no Spring você deve utilizar:
+Nessa sessão serão descritas as configurações e dependências que você irá utilizar o Jedis no Spring.
 
 **Dependências**
+
+Abaixo serão listadas as anotações necessárias para se trabalhar com o Jedis no Spring:
 - **spring-boot-starter-cache**: habilita o suporte ao cache na sua aplicação Spring.
 - **spring-boot-starter-data-redis**: utilizada para integrar o Redis à sua aplicação Spring.
 - **jedis**: biblioteca Java popular que fornece uma interface para interagir com o Redis.
 - **spring-boot-starter-json**: permite as aplicações Spring trabalharem com JSON.
 - **jackson-databind**: biblioteca responsável pela serialização e desserialização de objetos Java para JSON e vice-versa.
 
+**Configuração**
+
+Além de adicionar a dependência ao projeto, para utilizar o Jedis é necessário criar uma classe de configuração, na qual serão informados os dados de conexão com o Redis. A classe de configuração está dentro do pacote configuration.
+
 ## JEDIS
 O Jedis permite que sua aplicação Java se conecte ao servidor Redis, armazene e recupere dados, e execute uma variedade de operações no Redis.
-
-### CONFIGURAÇÃO
-Além de adicionar a dependência ao projeto, para utilizar o Jedis é necessário criar uma classe de configuração, informando os dados de conexão com o Redis.
 
 ### MÉTODOS
 Abaixo serão listados os métodos do Jedis que foram utilizados nesse projeto:
