@@ -8,7 +8,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import br.com.spring.redis.redis_jedis.collection.Produto;
+import br.com.spring.redis.redis_jedis.entity.Produto;
 import br.com.spring.redis.redis_jedis.service.ProdutoService;
 
 @SpringBootApplication

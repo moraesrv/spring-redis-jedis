@@ -7,7 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
-import br.com.spring.redis.redis_jedis.collection.Produto;
+import br.com.spring.redis.redis_jedis.entity.Produto;
 
 /**
  * Classe utilizada para simular um repositório de dados relacionais

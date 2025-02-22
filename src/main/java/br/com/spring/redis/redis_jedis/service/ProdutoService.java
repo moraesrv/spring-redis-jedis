@@ -6,7 +6,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import br.com.spring.redis.redis_jedis.collection.Produto;
+import br.com.spring.redis.redis_jedis.entity.Produto;
 import br.com.spring.redis.redis_jedis.repository.ProdutoRepository;
 
 import java.util.ArrayList;

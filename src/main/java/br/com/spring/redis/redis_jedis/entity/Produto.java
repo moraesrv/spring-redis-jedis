@@ -1,4 +1,4 @@
-package br.com.spring.redis.redis_jedis.collection;
+package br.com.spring.redis.redis_jedis.entity;
 
 import java.io.Serializable;
 
